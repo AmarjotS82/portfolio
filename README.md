@@ -1,2 +1,2 @@
 # portfolio
-This is my personal portfolio sowcasing projects and skills.
+This is my personal portfolio showcasing my projects and skills.
