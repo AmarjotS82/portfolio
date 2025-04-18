@@ -44,7 +44,7 @@ export  const projects: Project[] = [
     },
     {
         name: "Law AI",
-        overview: "Web application uses AI to give a verdict",
+        overview: "Web application that uses AI to give a verdict by using custom made endpoints",
         description:
             "This web application utilizes AI to provide verdicts by communicating with the backend through API calls to various endpoints. The landing page was created using React, enabling seamless interaction with the backend database.",
         languages: ["React", "JavaScript", "tailwind", "Python"],

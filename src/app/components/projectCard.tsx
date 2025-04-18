@@ -75,15 +75,15 @@ export default function ProjectCard( {projectDetails} : {projectDetails : Projec
               <LanguageIcon key={name} langaugeName={name} />
             ))}
           </div>
-          {/* GitHub Logo Section */}
-          <div className="w-full sm:w-auto flex justify-center sm:justify-end">
+        </div>
+         {/* GitHub Logo Section */}
+          <div className="w-full sm:w-auto flex justify-center sm:justify-end mb-5">
             {GithubRepo && (
               <Link href={GithubRepo} target="_blank">
                 <BsGithub className="text-4xl" />
               </Link>
             )}
           </div>
-        </div>
       </CardFooter>
     </Card>
     )
