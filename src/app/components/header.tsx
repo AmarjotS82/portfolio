@@ -8,7 +8,17 @@ import { useEffect, useState } from 'react';
 
 export default function Header(){
       const [isDarkMode, setIsDarkMode] = useState(false);
-    
+      const [scrolled, setScrolled] = useState(false);
+
+      useEffect(() => {
+        const onScroll = () => {
+          setScrolled(window.scrollY !== 0); // true if not at the very top
+        };
+      
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+      }, []);
+
       useEffect(() => {
         const root = window.document.documentElement;
         if (isDarkMode) {
@@ -21,9 +31,10 @@ export default function Header(){
       const toggleDarkMode = () => {
         setIsDarkMode((prev: boolean) => !prev);
       };
+    
     return(
-        <header>
-            <div className="flex flex-row mt-4 justify-between items-center">
+        <header className={`sticky top-0 transition-colors duration-300 ${scrolled ? 'bg-white dark:bg-black shadow-md' : 'bg-transparent'}`}>
+            <div className="flex flex-row mt-4 justify-between items-center mb-2">
                 {/*If want logo on top right corner change above div to jsutify between  */}
                 <div className="flex flex-row justify-end ml-5 hover:text-white">
                         <img src="/favicon/favicon-32x32.png" alt="logo"></img>
