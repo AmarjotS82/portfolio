@@ -23,22 +23,24 @@ export default function Header(){
       };
     return(
         <header>
-            <div className="flex flex-row mt-4 justify-end">
+            <div className="flex flex-row mt-4 justify-between items-center">
                 {/*If want logo on top right corner change above div to jsutify between  */}
-                {/* <div className="flex flex-row justify-end ml-5 hover:text-white">
-                        <h1 className='font-bold'>Amarjot Sangha</h1>
-                </div> */}
-
-                <div className="flex flex-row justify-start mr-5 ">
-                    {/* <IoMdHome className='text-xl'/> */}
-                    <Link className="mr-5 font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/">Home</Link>
-                    <Link className="mr-5 font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/projects">Projects</Link>
-                    <Link className="font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/about">About</Link>
+                <div className="flex flex-row justify-end ml-5 hover:text-white">
+                        <img src="/favicon/favicon-32x32.png" alt="logo"></img>
+                        {/* <h1 className='font-bold'>Amarjot Sangha</h1> */}
                 </div>
-                <div className="flex flex-row mr-2">
-                <IoSunnyOutline className='text-xl mr-1 mt-1'/>
-                <Switch className='data-[state=checked]:bg-charcoal data-[state=unchecked]:bg-orange-200' onClick={() => toggleDarkMode()}/>
-                <FaRegMoon className='text=xl ml-1 mt-1'/>
+                <div className="flex flex-row items-center">
+                    <div className="flex flex-row justify-start mr-5 ">
+                        {/* <IoMdHome className='text-xl'/> */}
+                        <Link className="mr-5 font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/">Home</Link>
+                        <Link className="mr-5 font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/projects">Projects</Link>
+                        <Link className="font-bold inlarge-colour hover:text-red-800 hover:dark:text-yellow-300" href="/about">About</Link>
+                    </div>
+                    <div className="flex flex-row mr-2">
+                    <IoSunnyOutline className='text-xl mr-1 mt-1'/>
+                    <Switch className='data-[state=checked]:bg-charcoal data-[state=unchecked]:bg-orange-200' onClick={() => toggleDarkMode()}/>
+                    <FaRegMoon className='text=xl ml-1 mt-1'/>
+                    </div>
                 </div>
             </div>
         </header>
