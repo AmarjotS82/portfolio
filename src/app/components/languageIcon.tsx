@@ -13,6 +13,14 @@ import { FaReact } from "react-icons/fa";
 import { SiTauri } from "react-icons/si";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { SiProcessingfoundation } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaFigma } from "react-icons/fa";
+import { FaTrello } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+import Icon from "./CustomIcon";
+import CustomIcon from "./CustomIcon";
 
 export default function LanguageIcon({langaugeName} : {langaugeName : string}){
     const langaugeIcons: any = {
@@ -31,15 +39,22 @@ export default function LanguageIcon({langaugeName} : {langaugeName : string}){
         tailwind: <RiTailwindCssFill  className="text-4xl"/>,
         phoenix:  <FaPhoenixFramework  className="text-4xl"/>,
         processing:  <SiProcessingfoundation  className="text-4xl"/>,
+        github: <FaGithub  className="text-4xl"/>,
+        node: <FaNodeJs  className="text-4xl"/>,
+        next: <RiNextjsFill  className="text-4xl"/>,
+        figma: <FaFigma  className="text-4xl"/>,
+        trello: <FaTrello  className="text-4xl"/>,
+        // sql: <SiPostgresql className="text-4xl"/>,
     }
-    const matchingLanguageIcon = langaugeIcons[langaugeName.toLowerCase()]
+    let name = langaugeName
+    const regexParts = langaugeName.split(/\./);
+    if(regexParts.length > 1){
+        name = regexParts[0];
+    }
+    console.log(name)
+    const matchingLanguageIcon = langaugeIcons[name.toLowerCase()]
     return (
-        <div className=" mr-3">
-            <div className="flex justify-center">
-                {matchingLanguageIcon}
-            </div>
-            <p key={langaugeName}>{langaugeName}</p>
-        </div>
+        <CustomIcon IconImg={matchingLanguageIcon} Label={langaugeName}/>
             
     )
 
