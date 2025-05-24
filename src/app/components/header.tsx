@@ -37,7 +37,9 @@ export default function Header(){
             <div className="flex flex-row mt-4 justify-between items-center mb-2">
                 {/*If want logo on top right corner change above div to jsutify between  */}
                 <div className="flex flex-row justify-end ml-5 hover:text-white">
-                        <img src="/favicon/favicon-32x32.png" alt="logo"></img>
+                        <Link href="/">
+                          <img src="/favicon/favicon-32x32.png" alt="logo" />
+                        </Link>
                         {/* <h1 className='font-bold'>Amarjot Sangha</h1> */}
                 </div>
                 <div className="flex flex-row items-center">

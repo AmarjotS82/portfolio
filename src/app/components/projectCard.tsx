@@ -60,9 +60,9 @@ export default function ProjectCard( {projectDetails} : {projectDetails : Projec
       <CardContent>
           <Accordion type="single" collapsible className="w-full">
               <AccordionItem value={Name}>
-                <AccordionTrigger className="p-2  rounded-sm hover:bg-orange-200 hover:dark:bg-neutral-950">More details</AccordionTrigger>
+                <AccordionTrigger className="p-2  rounded-sm hover:bg-orange-200 hover:dark:bg-neutral-950 font-semibold">More details</AccordionTrigger>
                   <AccordionContent>
-                      <p>{Description}</p>
+                      <p className="text-lg font-medium">{Description}</p>
                   </AccordionContent>
               </AccordionItem>
           </Accordion>

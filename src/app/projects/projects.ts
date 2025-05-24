@@ -12,6 +12,17 @@ export  const projects: Project[] = [
         endDate: "December 2024",
     },
     {
+        name: "Reliable Protocol TCP Client Server",
+        overview: "reliable protocol that helps achieve reliable data transmission",
+        description:
+            "A reliable protocol using concepts that make TCP reliable like retransmission that helps achieve reliable data transmission that was tested through a client server socket communication with a malicious proxy in between that can drop and delay packets in both directions from the client or server",
+        languages: ["Python"],
+        githubRepo: "https://github.com/AyyyTran/TCPClientServer",
+        members:2,
+        startDate:"November 2024", 
+        endDate:"December 2024",
+    },
+    {
         name: "IPS Project Tracking Tool",
         overview: "Track and report company-specific projects",
         description:
@@ -42,17 +53,17 @@ export  const projects: Project[] = [
         startDate: "March 2024", 
         endDate: "April 2024",
     },
-    {
-        name: "Law AI",
-        overview: "Web application that uses AI to give a verdict by using custom made endpoints",
-        description:
-            "This web application utilizes AI to provide verdicts by communicating with the backend through API calls to various endpoints. The landing page was created using React, enabling seamless interaction with the backend database.",
-        languages: ["React", "JavaScript", "tailwind", "Python"],
-        githubRepo: "https://github.com/shawnbirring/4537-term-project",
-        members: 4,
-        startDate: "March 2024", 
-        endDate: "April 2024",
-    },
+    // {
+    //     name: "Law AI",
+    //     overview: "Web application that uses AI to give a verdict by using custom made endpoints",
+    //     description:
+    //         "This web application utilizes AI to provide verdicts by communicating with the backend through API calls to various endpoints. The landing page was created using React, enabling seamless interaction with the backend database.",
+    //     languages: ["React", "JavaScript", "tailwind", "Python"],
+    //     githubRepo: "https://github.com/shawnbirring/4537-term-project",
+    //     members: 4,
+    //     startDate: "March 2024", 
+    //     endDate: "April 2024",
+    // },
     {
         name: "Wave Assault",
         overview: "wave shooter game where you survive for as long as possible",
