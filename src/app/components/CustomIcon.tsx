@@ -7,11 +7,11 @@ export default function CustomIcon({IconImg, Label} : IconProps){
     return(
         <>
 
-        <div className=" mr-3">
-            <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center text-center">
+            <div className="">
                 {IconImg}
             </div>
-            <p key={Label} className="font-semibold">{Label}</p>
+            <p key={Label} className="mt-1 font-semibold">{Label}</p>
         </div>
 
         </>

@@ -23,7 +23,7 @@ export default function AboutPage(){
         <Title titleName = {title}/>
         <div className="flex flex-row w-full justify-center">
             <div className="flex flex-row sm:w-1/2 w-full">
-            <p className="text-xl m-4">{aboutDetails}</p>
+            <p className="text-xl mb-2">{aboutDetails}</p>
             </div>
         </div>
 
@@ -31,8 +31,8 @@ export default function AboutPage(){
             <LanguageList titleName="Languages" languages={languages} />
             <LanguageList titleName="Technologies" languages={technologies}/>
 
-            <h2 className="text-xl font-bold text-center mt-10">Education</h2>
-            <div className="flex justify-center items-center space-x-4 mt-2">
+            <h2 className="text-2xl font-bold text-center mt-6">Education</h2>
+            <div className="flex justify-center items-center space-x-4 mt-2 mb-2">
                 <CustomIcon IconImg={<GiGraduateCap className="text-4xl" />} Label={DiplomaStatus} />
                 <FaArrowRight className="text-4xl" />
                 <CustomIcon IconImg={<Fa3 className="text-4xl" />} Label={BachelorStatus} />

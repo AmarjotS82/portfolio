@@ -8,11 +8,11 @@ interface LanguageListProps{
 export default function LanguageList({titleName, languages} : LanguageListProps){
     return(
         <>
-            <h2 className="flex flex-row justify-center w-full text-xl font-bold mt-10 mb-3">{titleName}</h2>
+            <h2 className="flex flex-row justify-center w-full text-2xl font-bold mt-4 mb-3">{titleName}</h2>
             <div className="flex flex-row w-full mt-2">
-                <div className="flex flex-wrap sm:flex-row w-full  justify-evenly gap-3 mb-4 sm:mb-0">
+                <div className="flex flex-wrap sm:flex-row w-full justify-center gap-8 mb-4 sm:mb-0">
                             {languages.map((name) => (
-                            <LanguageIcon key={name} langaugeName={name} />
+                                    <LanguageIcon key={name} langaugeName={name} size="text-6xl"/>
                             ))}
                 </div>
             </div>

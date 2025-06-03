@@ -12,6 +12,7 @@ import Link from "next/link";
 import { RiTeamFill } from "react-icons/ri";
 import { IoPersonSharp } from "react-icons/io5";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FaArrowRight } from "react-icons/fa";
 
 // function DateStrRep(date: Date){
 //     let month = date.toLocaleString('en-US', { month: 'long' })
@@ -72,13 +73,17 @@ export default function ProjectCard( {projectDetails} : {projectDetails : Projec
           {/* Languages Section */}
           <div className="flex flex-wrap sm:flex-row w-full  justify-evenly gap-3 mb-4 sm:mb-0">
             {Languages.map((name) => (
-              <LanguageIcon key={name} langaugeName={name} />
+              <LanguageIcon key={name} langaugeName={name} size="text-4xl"/>
             ))}
             {/* GitHub Logo Section */}
             {GithubRepo && (
+              //flex flex-col justify-center items-center text-center
+              <div className=""> 
               <Link href={GithubRepo} target="_blank">
-                <BsGithub className="text-4xl" />
+                <BsGithub className="text-4xl mr-1" />
+                {/* <FaArrowRight className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200" /> */}
               </Link>
+              </div>
             )}
           </div>
         </div>
