@@ -9,8 +9,7 @@ import CustomButton from "./components/CustomButton";
 
 export default function Home() {
   const introPara = `Here, you can find a showcase of my projects, skills, and my journey as an aspiring software
-                    engineer.Heres a quick overview of what I have accomplished so far and for more information you can go 
-                    to a page to see more.`
+                    engineer!`
   
   const projectsOverviewList: Project[] = projects.slice(0, 3);     
   
@@ -21,7 +20,7 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="flex flex-row w-full justify-center">
         <div className="flex flex-row lg:w-1/2 w-full">
-          <p className="text-xl m-4">{introPara}</p>
+          <p className="text-lg m-4 font-medium">{introPara}</p>
         </div>
       </div>
 

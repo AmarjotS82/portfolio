@@ -10,7 +10,7 @@ interface ButtonProps{
 export default function CustomButton({text, icon} : ButtonProps){
     const buttonContent = (
         <div className="flex flex-row justify-center">
-          <p className="ml-1 text-xl h-1/2">{text}</p>
+          <p className="ml-1 text-xl h-1/2 font-semibold">{text}</p>
           {icon}
         </div>
       )
