@@ -14,7 +14,7 @@ export default function CustomButton({text, icon} : ButtonProps){
           {icon}
         </div>
       )
-    const tailwindCSS = "rounded-full bg-slate-200 text-black hover:text-orange-600 dark:bg-black dark:text-white p-2 hover:dark:text-yellow-300 transition-colors duration-300"
+    const tailwindCSS = "rounded-full bg-slate-200 text-black hover:text-orange-600 dark:bg-black dark:text-white p-2 hover:dark:text-yellow-300 transition-colors duration-300 hover:border-2  hover:border-orange-600 hover:dark:border-yellow-300"
     let file_name = ""
     let path_to_file = ""
     if(text.includes("resume")){

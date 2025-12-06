@@ -7,13 +7,14 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function AboutPage(){
     const title = "About Me"
-    const aboutDetails =   `I am currently searching for a fall internship as a part of my co-op program in the 
+    const aboutDetails =   `I am currently working at Univerus as a part of my co-op program in the 
                             Bachelor of Science in Applied Computer Science in Network Security at 
-                            British Columbia Institute of Technology (BCIT). 
-                            I wanted to continue learning and grow the skills I have gained from
-                            completing the Computer Systems Technology Diploma at BCIT. 
+                            British Columbia Institute of Technology (BCIT). Over the last few month 
+                            I've been constantly learning new things everyday and refining my skills.
+                            This experience was exactly what I wanted to help continue to improve my skills
+                            after graduating from the Computer Systems technology Diploma at BCIT.
                             In my free time I enjoy building new projects, reading, and running. `
-    //Add SQL if needed
+   
     const languages = ["TypeScript", "JavaScript", "Python", "HTML5", "CSS", "Java" ]
     const technologies = ["GitHub", "Vercel", "Node.js", "Next.js","Figma", "processing", "Trello"]
     const DiplomaStatus = "Computer Systems Technology Diploma Graduate at BCIT"
